@@ -24,6 +24,30 @@ const movieDB = {
     ]
 };
 
+//task #1
+
 const advImg = document.querySelectorAll('.promo__adv img');
 
 advImg.forEach( element => element.remove() );
+
+//task #2
+
+const genre = document.querySelector('.promo__genre');
+
+genre.textContent = 'драма';
+
+//task #3
+
+const background = document.querySelector('.promo__bg');
+
+// background.setAttribute( 'style', 'background-image: url("img/bg.jpg")' );
+
+// background.style.backgroundImage = 'url("img/bg.jpg")';
+
+background.style.cssText = 'background-image: url("img/bg.jpg")';
+
+
+
+
+
+
