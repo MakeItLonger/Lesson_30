@@ -46,6 +46,23 @@ const background = document.querySelector('.promo__bg');
 
 background.style.cssText = 'background-image: url("img/bg.jpg")';
 
+//task #4
+
+const listMovies = document.querySelector('.promo__interactive-list');
+
+listMovies.innerHTML = "";
+
+movieDB.movies.sort();
+
+movieDB.movies.forEach( (element, number) => {
+    listMovies.innerHTML += `
+    <li class="promo__interactive-item">${number + 1}. ${element}
+        <div class="delete"></div>
+    </li>
+    `;
+} );
+
+
 
 
 
